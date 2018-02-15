@@ -18,9 +18,9 @@ function currentLine(katzDeliLine) {
   if (katzDeliLine.length > 0) {
     var newArray = [];
     for (var i = 0; i > katzDeliLine.length; i++) {
-      newArray.push()
+      newArray.push(`${katzDeliLine.length}. ${katzDeliLine}, `)
     }
-    return 
+    return `The line is currently: ${newArray.shift()
   } else {
     return "The line is currently empty.";
   }
