@@ -4,7 +4,7 @@ function takeANumber(katzDeliLine, newName) {
 }
 
 function nowServing(katzDeliLine) {
-  var currentlyServing = ""
+  var currentlyServing = "";
   if (katzDeliLine.length > 0) {
     currentlyServing = `Currently serving ${katzDeliLine[0]}.`;
     katzDeliLine.shift();
@@ -18,9 +18,9 @@ function currentLine(katzDeliLine) {
   if (katzDeliLine.length > 0) {
     var newArray = [];
     for (var i = 0; i > katzDeliLine.length; i++) {
-      newArray.push(`${katzDeliLine.length}. ${katzDeliLine}, `)
+      newArray.push(`${katzDeliLine.length}. ${katzDeliLine}, `);
     }
-    return `The line is currently: ${newArray.splice()
+    return `The line is currently: ${newArray.splice(-1, 2)}`;
   } else {
     return "The line is currently empty.";
   }
