@@ -20,7 +20,7 @@ function currentLine(katzDeliLine) {
     for (var i = 0; i > katzDeliLine.length; i++) {
       newArray.push(`${katzDeliLine.length}. ${katzDeliLine}, `)
     }
-    return `The line is currently: ${newArray.shift()
+    return `The line is currently: ${newArray.splice()
   } else {
     return "The line is currently empty.";
   }
